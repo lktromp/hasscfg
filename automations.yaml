@@ -1,0 +1,36 @@
+#automation:
+- alias: Morning
+  trigger:
+    platform: state
+    entity_id: input_select.housescene
+    to: "Morning" 
+  condition: []
+  action:
+    - service: scene.turn_on
+      entity_id: scene.morning
+    - delay: '00:00:01'
+    - service: scene.turn_on
+      entity_id: scene.morning
+- alias: Evening
+  trigger:
+    platform: state
+    entity_id: input_select.housescene
+    to: "Evening"
+  condition: []
+  action:
+    - service: scene.turn_on
+      entity_id: scene.evening
+    - delay: '00:00:01'
+    - service: scene.turn_on
+      entity_id: scene.evening
+
+###new automations
+- alias: StandUop
+  trigger:
+    platform: state
+    entity_id: input_boolean.stand_up
+    to: "on"
+  condition: []
+  action:
+    service: scene.turn_on
+    entity_id: scene.morning

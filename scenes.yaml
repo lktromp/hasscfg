@@ -1,0 +1,33 @@
+  - name: morning
+    entities:
+      group.keuken:
+        state: on
+        brightness: 252
+        color_temp: 370
+      group.speelkamer:
+        state: on
+        brightness: 239
+        color_temp: 309
+      group.leeskamer:
+        state: off
+      group.zitkamer:
+        state: off
+
+  - name: evening
+    entities:
+      group.keuken:
+        state: on
+        brightness: 94
+        color_temp: 367
+      group.speelkamer:
+        state: on
+        brightness: 61
+        color_temp: 356
+      group.leeskamer:
+        state: on
+        brightness: 102
+        color_temp: 370
+      group.zitkamer:
+        state: on
+        brightness: 168
+        color_temp: 346

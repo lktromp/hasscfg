@@ -1,0 +1,68 @@
+### groups.yaml ###
+
+  #Views
+  default_view:
+    view: yes
+    name: Home
+    entities:
+      - group.keuken
+      - group.speelkamer
+      - group.leeskamer
+      - group.zitkamer
+      - group.readingroom
+      - group.uihomescenes
+      - input_select.housescene
+
+  #Room Groups
+  readingroom:
+    name: ReadingRoom
+    entities:
+      light.leeshoek
+
+  keuken:
+    name: Keuken
+    control: hidden
+    entities:
+      - light.keuken
+  
+  keuken1:
+    name: Keuken
+    control: hidden
+    entities:
+      - light.keuken1
+      - light.keuken2
+      - light.keuken3
+      - light.keuken3_temp
+      - light.keuken4
+      - light.keuken5
+  speelkamer:
+    name: Speelkamer
+    control: hidden
+    entities:
+      - light.daglichtlamp
+  leeskamer:
+    name: Leeskamer
+    control: hidden
+    entities:
+      - light.leeskamer_spot_links
+      - light.leeskamer_spot_midden
+      - light.leeskamer_spot_rechts
+  zitkamer:
+    name: Zitkamer
+    control: hidden
+    entities:
+      - light.zitkamerspotlinksbinnen
+      - light.zitkamerspotlinksbuiten
+      - light.zitkamerspotrechtsbinnen
+      - light.zitkamerspotrechtsbuiten
+      - light.staande_lamp
+
+
+  #UI groups
+  uihomescenes:
+    name: Scenes
+    control: hidden
+    entities:
+      - input_boolean.stand_up
+      - input_boolean.dinner
+      - input_boolean.relaxing
