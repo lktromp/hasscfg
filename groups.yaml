@@ -12,6 +12,19 @@
       - group.readingroom
       - group.uihomescenes
       - input_select.housescene
+      - group.meter_readings
+
+  #Smart Meter
+  meter_readings:
+    name: Meterstanden
+    entities:
+      - sensor.power_consumption
+      - sensor.power_tariff
+      - sensor.power_consumption_low
+      - sensor.power_consumption_normal
+      - sensor.gas_consumption
+      - sensor.voltage_sags_phase_I1
+      - sensor.voltage_swells_phase_U1
 
   #Room Groups
   readingroom:

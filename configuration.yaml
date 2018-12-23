@@ -57,6 +57,9 @@ sun:
 sensor:
   # Weather prediction
   - platform: yr
+  - platform: dsmr
+    port: /dev/ttyUSB0
+    dsmr_version: 4
 
 # Text to speech
 tts:
